@@ -144,7 +144,7 @@ class A_Star_Canvas: # Visual representation of graph and A*
             self.destinations_letters_dictionary[i.name] = i
 
         graph_len_sqrt = int(sqrt(len(graph)))
-        sqr_size = 8
+        sqr_size = 25
     
         self.canvas1 = Canvas(self.top, width = sqr_size * graph_len_sqrt, height = sqr_size * graph_len_sqrt)
         self.canvas1.grid(row = 0, column = 0,columnspan = 3)
@@ -159,8 +159,8 @@ class A_Star_Canvas: # Visual representation of graph and A*
         self.start = Button(self.top, text = "start", width = graph_len_sqrt//2,command = self.a_star_action)
         self.start.grid(row=1, column=1)
         
-        self.start = Button(self.top, text = "maze", width = graph_len_sqrt//2,command = self.maze_generator)
-        self.start.grid(row=1, column=2)
+        # self.start = Button(self.top, text = "maze", width = graph_len_sqrt//2,command = self.maze_generator)
+        # self.start.grid(row=1, column=2)
 
         self.start_lable = Label(self.top,text = "Starting Point")
         self.start_lable.grid(row=2, column=0)
